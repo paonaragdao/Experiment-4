@@ -1,0 +1,71 @@
+// Program 1
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+	
+int x,y;
+char confirm;
+cout << "MENU"<<"\n";
+cout << "1. Add"<<endl;
+cout << "2. Subtract"<<endl;
+cout << "3. Multiply"<<endl;
+cout << "4. Divide"<<endl;
+cout << "5. Modulus "<<endl;
+
+	do{
+cout<<"Enter your choice (choose from 1 to 5): ";
+int option;
+cin>>option;
+cout<<"Enter your two numbers separated by space: ";
+cin>>x>>y;
+
+//Add
+int a;
+a=x+y;
+
+//Sub
+int b;
+b=x-y;
+
+//Mul
+int c;
+c=x*y;
+
+//Div
+int d;
+d=x/y;
+
+//Mod
+int e;
+e=x%y;
+
+switch (option) {
+case 1:
+cout << "Result = " << a <<endl;
+break;
+case 2:
+cout << "Result = " << b <<endl;
+break;
+case 3:
+cout << "Result = " << c <<endl;
+break;
+case 4:
+cout << "Result = " << d <<endl;
+break;
+case 5:
+cout << "Result = " << e <<endl;
+break;
+}
+
+cout << "To Continue, enter 'y'. To Exit, enter anything else >> ";
+cin >> confirm;
+}
+while(confirm=='y');
+system("pause");
+return 0;
+}
